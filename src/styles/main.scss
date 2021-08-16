@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+@import './variables';
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-family: $font;
+}
+
+@import './index';
+@import './components/buttons';
+@import './components/hero';
+@import './components/faq';
+@import './components/modal';

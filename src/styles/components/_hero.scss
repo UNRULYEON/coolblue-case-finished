@@ -1,0 +1,68 @@
+.hero {
+	display: grid;
+	grid-template-columns: 1fr 1.2fr 1fr;
+	justify-items: center;
+	align-items: center;
+	background-color: $light-grey;
+	min-height: 500px;
+	padding: 20px 0;
+
+	@media screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+		min-height: auto;
+	}
+
+	.image-big {
+		width: 100%;
+		height: auto;
+		max-width: 500px;
+
+		@media screen and (max-width: 800px) {
+			display: none;
+		}
+	}
+
+	.cta-container {
+		text-align: center;
+		color: $dark-grey;
+
+		.title,
+		.subtitle {
+			font-size: 2.5rem;
+			margin: 10px;
+
+			@media screen and (max-width: 800px) {
+				font-size: 1.8rem;
+			}
+		}
+
+		.title {
+			font-weight: bold;
+		}
+
+		.subtitle {
+			font-weight: normal;
+		}
+	}
+
+	.image-small {
+		display: none;
+
+		@media screen and (max-width: 800px) {
+			display: initial;
+			margin-top: 20px;
+
+			width: 100%;
+			height: auto;
+			max-width: 275px;
+		}
+	}
+
+	.buttons-container {
+		margin-top: 50px;
+
+		@media screen and (max-width: 800px) {
+			margin-top: 20px;
+		}
+	}
+}

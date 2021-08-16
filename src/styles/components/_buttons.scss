@@ -1,0 +1,23 @@
+button.primary,
+button.secondary {
+	border: none;
+	text-decoration: none;
+	color: $white;
+	padding: 15px 0;
+	width: 200px;
+	border-radius: 30px;
+	margin: 5px;
+	cursor: pointer;
+
+	@media screen and (max-width: 800px) {
+		min-width: 250px;
+	}
+}
+
+button.primary {
+	background: linear-gradient($light-red, $dark-red);
+}
+
+button.secondary {
+	background: linear-gradient($grey, $dark-grey);
+}

@@ -1,0 +1,20 @@
+body {
+	display: flex;
+	flex-flow: column;
+}
+
+header {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+
+	color: $white;
+	background-color: $dark-red;
+
+	#title {
+		font-weight: bold;
+		font-size: 1.7rem;
+	}
+}
